@@ -5,10 +5,6 @@ option(BUILD_VGICP_CUDA "Build GPU-powered VGICP" OFF)
 option(BUILD_apps "Build application programs" ON)
 option(BUILD_test "Build test programs" OFF)
 
-add_definitions(-msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2)
-set(CMAKE_C_FLAGS "-msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2")
-set(CMAKE_CXX_FLAGS "-msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2")
-
 set(CMAKE_BUILD_TYPE "Release")
 
 find_package(catkin)
